@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = 'get-element-by-id';
+
+        let reg = /-([a-z])/g;
+
+        const paterStr = str.replace(reg,(item,group) => group.toUpperCase())
+
+        console.log('paterStr:',paterStr)
+
+
+        // map
+        // let strArr = str.split('-');
+        // let strNum = strArr.map((item,index) => {
+        //     if(index === 0){
+        //         return item
+        //     }
+        //     return item.charAt(0).toUpperCase() + item.slice(1)
+        // }).join('')
+        // console.log(strNum)
+
+        // -------分割线-------
+
+        // let split_Str = str.split('-');
+        // console.log('split_Str-----------start',split_Str)
+        // let arr = [];
+        // for(let i=1;i<split_Str.length;i++){
+        //     arr.push(split_Str[i].charAt(0).toUpperCase() + split_Str[i].substring(1))
+        // }
+        // arr.unshift(split_Str[0]);
+        // split_Str = arr.join('')
+        // console.log('split_Str---------end',split_Str)
+
+
+        // let get_one = split_Str[0];
+
+        // let ele = split_Str[1].split('')[0].toUpperCase();
+
+
+        // // console.log(ele)
+        
+        // let By = split_Str[2].replace('b','B');
+
+        // let Id = split_Str[3].replace('i','I');
+
+        // let num_str = `${get_one}${ele}${By}${Id}`;
+
+
+        // console.log(num_str)
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = new Array('ha',{'11':2});
+
+        const obj = new Object();
+
+        const func = function(){};
+        // obj.name = '小红'
+
+        const str = new String('hello world!');
+
+
+        function getType(val){
+            let type = typeof val;
+            if(type !== 'object') return type
+
+            if(val === null) return null
+
+            if(Array.isArray(val)) return 'Array'
+
+            return 'Object'
+        }
+        console.log('type:',getType(arr))
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent {
+            height: 600px;
+            background: red;
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            /* aa只要三句话就可以实现不定宽高水平垂直居中。 */
+        }
+
+        #child {
+            background: green;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            padding: 50px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent">
+        <div id="child">
+            儿子
+            儿子
+            儿子
+        </div>
+    </div>
+</body>
+
+</html>

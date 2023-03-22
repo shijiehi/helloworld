@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="" placeholder="请输入" value=""/>
+    <script>
+        let str = " hello world "
+
+
+        // trim
+        // const strTrim = str.trim()
+
+        // charAt/substring
+        let strS = str;
+        if(strS.charAt(0) === ' '){
+            strS = strS.substring(1)
+        }
+
+        if(strS.charAt(strS.length-1) === ' '){
+            strS = strS.substring(0,11)
+        }
+
+
+        document.getElementsByTagName('input')[0].value = strS
+        console.log('strS:',strS,strS.length)
+
+        // 正则
+
+    </script>
+</body>
+</html>

@@ -10,10 +10,12 @@
     <input type="" placeholder="请输入" value=""/>
     <script>
         let str = " hello world "
+        console.log('strLen:',str.length)
 
 
         // trim
-        // const strTrim = str.trim()
+        const strTrim = str.trim()
+        console.log('strTrimLen:',strTrim.length)
 
         // charAt/substring
         let strS = str;
@@ -22,7 +24,7 @@
         }
 
         if(strS.charAt(strS.length-1) === ' '){
-            strS = strS.substring(0,11)
+            strS = strS.substring(0,strS.length-1)
         }
 
 
